@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alex Morgan — Creative full-stack developer crafting beautiful digital experiences.">
+  <title>Alex Morgan — Full-Stack Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">alex.dev</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="orb"></div>
+    <div class="orb"></div>
+    <div class="orb"></div>
+  </div>
+  <div class="hero-content">
+    <span class="hero-tag">✦ Available for freelance work</span>
+    <h1>I build <span class="gradient-text">digital experiences</span> that matter.</h1>
+    <p>Full-stack developer specializing in crafting performant, accessible, and visually stunning web applications.</p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn btn-primary">View My Work</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <h3><span class="gradient-text">50+</span></h3>
+        <p>Projects Delivered</p>
+      </div>
+      <div class="stat">
+        <h3><span class="gradient-text">5+</span></h3>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat">
+        <h3><span class="gradient-text">30+</span></h3>
+        <p>Happy Clients</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="section-header reveal">
+    <span class="section-tag">About Me</span>
+    <h2>Passionate About Craft</h2>
+    <p>Turning complex problems into simple, elegant solutions.</p>
+  </div>
+  <div class="about-grid">
+    <div class="about-image reveal">
+      <div style="width:100%;height:100%;background:linear-gradient(135deg,#7c5cfc 0%,#00d4aa 100%);display:flex;align-items:center;justify-content:center;font-size:6rem;">👨‍💻</div>
+    </div>
+    <div class="about-text reveal">
+      <h3>Hey, I'm Alex Morgan</h3>
+      <p>I'm a creative full-stack developer based in San Francisco with over 5 years of experience designing and building web applications. I thrive at the intersection of design and engineering, creating seamless user experiences backed by robust, scalable code.</p>
+      <p>When I'm not coding, you'll find me hiking through national parks, experimenting with generative art, or contributing to open-source projects.</p>
+      <h4 style="margin:20px 0 12px;font-size:0.9rem;color:var(--text-secondary);">Tech I Work With</h4>
+      <div class="tech-stack">
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">TypeScript</span>
+        <span class="tech-tag">React</span>
+        <span class="tech-tag">Next.js</span>
+        <span class="tech-tag">Node.js</span>
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">PostgreSQL</span>
+        <span class="tech-tag">Figma</span>
+        <span class="tech-tag">AWS</span>
+        <span class="tech-tag">Docker</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" style="background:var(--bg-secondary);">
+  <div class="section-header reveal">
+    <span class="section-tag">Services</span>
+    <h2>What I Do</h2>
+    <p>End-to-end solutions for your digital presence.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-icon">🎨</div>
+      <h3>UI/UX Design</h3>
+      <p>Crafting intuitive, pixel-perfect interfaces with Figma — from wireframes to high-fidelity prototypes that delight users.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">⚡</div>
+      <h3>Frontend Development</h3>
+      <p>Building blazing-fast, responsive applications with React, Next.js, and modern CSS — optimized for performance and accessibility.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">🛠️</div>
+      <h3>Backend & APIs</h3>
+      <p>Designing scalable REST & GraphQL APIs with Node.js and Python, backed by robust database architectures.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">☁️</div>
+      <h3>Cloud & DevOps</h3>
+      <p>Deploying and managing infrastructure on AWS with Docker, CI/CD pipelines, and monitoring for 99.9% uptime.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <div class="section-header reveal">
+    <span class="section-tag">Portfolio</span>
+    <h2>Featured Projects</h2>
+    <p>A selection of recent work I'm proud of.</p>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;font-size:4rem;">📊</div>
+      <div class="project-info">
+        <h3>Analytix Dashboard</h3>
+        <p>A real-time analytics platform with interactive charts, custom reports, and team collaboration features.</p>
+        <div class="project-tags">
+          <span>React</span><span>D3.js</span><span>Node.js</span><span>PostgreSQL</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#f093fb,#f5576c);display:flex;align-items:center;justify-content:center;font-size:4rem;">🛒</div>
+      <div class="project-info">
+        <h3>ShopFlow E-Commerce</h3>
+        <p>Full-featured e-commerce platform with Stripe payments, inventory management, and AI-powered recommendations.</p>
+        <div class="project-tags">
+          <span>Next.js</span><span>Stripe</span><span>MongoDB</span><span>AWS</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#4facfe,#00f2fe);display:flex;align-items:center;justify-content:center;font-size:4rem;">💬</div>
+      <div class="project-info">
+        <h3>ChatSphere</h3>
+        <p>Real-time messaging app with end-to-end encryption, video calls, and AI-powered smart replies.</p>
+        <div class="project-tags">
+          <span>React Native</span><span>Socket.io</span><span>WebRTC</span><span>Redis</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" style="background:var(--bg-secondary);">
+  <div class="section-header reveal">
+    <span class="section-tag">Experience</span>
+    <h2>My Journey</h2>
+    <p>Building expertise across the stack over the years.</p>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="date">2023 — Present</div>
+      <h3>Senior Full-Stack Developer</h3>
+      <div class="company">NovaTech Solutions, San Francisco</div>
+      <p>Leading a team of 6 developers building enterprise SaaS products. Architected a microservices migration that improved response times by 40%.</p>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="date">2021 — 2023</div>
+      <h3>Frontend Engineer</h3>
+      <div class="company">PixelCraft Studios, Remote</div>
+      <p>Built responsive web applications for clients including Fortune 500 companies. Introduced component-driven development with Storybook.</p>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="date">2019 — 2021</div>
+      <h3>Junior Developer</h3>
+      <div class="company">CodeBase Agency, Austin</div>
+      <p>Developed custom WordPress and React solutions for small businesses. Grew from intern to team contributor within 6 months.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials">
+  <div class="section-header reveal">
+    <span class="section-tag">Testimonials</span>
+    <h2>What Clients Say</h2>
+    <p>Feedback from people I've had the pleasure to work with.</p>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal">
+      <div class="stars">★★★★★</div>
+      <blockquote>"Alex delivered our project ahead of schedule and exceeded every expectation. The attention to detail and code quality was outstanding."</blockquote>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar"></div>
+        <div>
+          <h4>Sarah Chen</h4>
+          <p>CTO, Luminary Labs</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="stars">★★★★★</div>
+      <blockquote>"An incredible developer who truly understands both design and engineering. Our platform's performance improved by 3x after Alex's optimization work."</blockquote>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar"></div>
+        <div>
+          <h4>Marcus Rivera</h4>
+          <p>Founder, Velocity App</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="stars">★★★★★</div>
+      <blockquote>"Working with Alex felt like having a co-founder. They brought creative solutions to every challenge and communicated proactively throughout."</blockquote>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar"></div>
+        <div>
+          <h4>Emily Nakamura</h4>
+          <p>Product Lead, Streamline</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" style="background:var(--bg-secondary);">
+  <div class="section-header reveal">
+    <span class="section-tag">Contact</span>
+    <h2>Let's Work Together</h2>
+    <p>Have a project in mind? I'd love to hear about it.</p>
+  </div>
+  <div class="contact-wrapper reveal">
+    <form id="contactForm" onsubmit="handleSubmit(event)">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="John Doe" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="john@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Tell me about your project..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;text-align:center;">Send Message ✉️</button>
+    </form>
+  </div>
+  <div class="contact-info reveal">
+    <a href="mailto:alex@example.com">📧 alex@example.com</a>
+    <a href="#">🔗 LinkedIn</a>
+    <a href="#">🐙 GitHub</a>
+    <a href="#">🐦 Twitter</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Alex Morgan. Designed & built with ❤️</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
