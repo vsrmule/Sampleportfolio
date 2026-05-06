@@ -1,4 +1,4 @@
-name: Deploy to Windows EC2 (Custom Folder)
+name: Deploy to Windows EC2
 
 on:
   push:
@@ -13,17 +13,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Clean deployment folder
+      - name: Copy files to IIS folder
         run: |
-          if exist "C:\deployments\portfolio" (
-            rmdir /s /q "C:\deployments\portfolio"
-          )
-          mkdir "C:\deployments\portfolio"
-
-      - name: Copy files
-        run: |
-          xcopy * "C:\deployments\portfolio\" /E /H /C /I /Y
+          xcopy * "C:\deployments\portfolio\" /E /H /C /I /Y || exit 0
 
       - name: Restart IIS
-        run: |
-          iisreset
+        run: iisreset
