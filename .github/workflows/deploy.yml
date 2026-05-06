@@ -15,7 +15,8 @@ jobs:
 
       - name: Copy files to IIS folder
         run: |
-          xcopy * "C:\deployments\portfolio\" /E /H /C /I /Y || exit 0
+          xcopy * "C:\deployments\portfolio\" /E /H /C /I /Y
+          exit 0
 
       - name: Restart IIS
         run: iisreset
